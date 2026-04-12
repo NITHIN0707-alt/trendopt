@@ -1,0 +1,24 @@
+# TRENDOPT — Python dependencies
+# Install: pip install -r requirements.txt
+
+# Core data
+numpy>=1.24
+pandas>=2.0
+yfinance>=0.2.36
+
+# Machine learning
+scikit-learn>=1.3
+
+# Visualisation
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.18
+
+# Web dashboard
+streamlit>=1.35
+
+# Database (stdlib — no install needed)
+# sqlite3
+
+# Optional — LSTM neural network
+# tensorflow>=2.12
