@@ -39,7 +39,7 @@ def rsi(prices: np.ndarray, period: int = 14) -> np.ndarray:
     loss  = np.where(delta < 0, -delta, 0.0)
     ag    = pd.Series(gain).ewm(alpha=1 / period, adjust=False).mean().values
     al    = pd.Series(loss).ewm(alpha=1 / period, adjust=False).mean().values
-    rs    = np.where(al == 0, np.inf, ag / al)
+    rs    = np.divide(ag, al, out=np.full_like(ag, np.inf), where=al != 0)
     r     = 100 - 100 / (1 + rs)
     r[:period] = np.nan
     return r
