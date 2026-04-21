@@ -1,0 +1,34 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Streamlit and notebook artifacts
+.streamlit/secrets.toml
+.ipynb_checkpoints/
+
+# Local databases and exports
+database/*.db
+database/*.db-shm
+database/*.db-wal
+database/__pycache__/
+output/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

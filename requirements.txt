@@ -17,6 +17,9 @@ plotly>=5.18
 # Web dashboard
 streamlit>=1.35
 
+# Testing
+pytest>=8.0
+
 # Database (stdlib — no install needed)
 # sqlite3
 
